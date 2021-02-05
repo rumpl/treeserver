@@ -3,4 +3,7 @@ all: cli
 cli:
 	@go build .
 
-.PHONY: cli
+image:
+	@docker build -t rumpl/tree .
+
+.PHONY: cli image
